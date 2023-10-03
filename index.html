@@ -4,15 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문자열,숫자</title>
+  <title>연산자</title>
 </head>
 
 <body>
   <script>
-    let txt = '2'; //문자
-    let num = 2; //숫자
-    let result = txt + num; //문자와 숫자는 더해질수 없으니 num의 숫자값이 문자로 변환됨
-    console.log(result); //변수에 따옴표를 묶으면 문자로 변경되며 변수의 값을 읽을 수 없게됨 ex)'result'
+    //산술연산자
+    console.log(2 + 3);
+    console.log(2 - 3);
+    console.log(2 * 3);
+    console.log(4 / 2);
+    console.log(5 % 2);
+
+    let num = 1;
+    console.log(++num); //num 앞 뒤로 ++ 두개 붙여주면 값이 증가함
+    console.log(num);
+
+    //비교연산자
+    console.log(3 == '3'); // =는 대입연산자, == 같은 연산자(값만 비교하고 자료형은 비교하지 않음)
+    console.log(3 === '3'); //값과 자료형을 모두 비교
+
+    console.log(2 != '2'); // 2랑 3이 같지 않음 ! = 붙여쓰기, 자료형은 무시하면서 비교
+    console.log(2 !== '2');
+
+    console.log(2 > 3);
+    console.log(2 < 3);
+    console.log(2 <= 2);
+    console.log(true && true); //복수개의 값이 모두 true가 되어야지 true 반환
+    console.log(true || false); // 둘 중의 하나라도 true가 있으면 true 반환
+
+    //복합 대입 연산자
+    let num1 = 5;
+    //num1 = num1 + 2; // =는 대입연산자 오른쪽이 연산되어 왼쪽에 대입됨
+    num1 += 2;
+    console.log(num1);
+
+    let txt1 = 'hello';
+    txt1 += 'world';
+    console.log(txt1);
+
   </script>
 </body>
 
