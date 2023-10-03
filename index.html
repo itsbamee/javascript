@@ -1,31 +1,18 @@
 <!DOCTYPE html>
-
---------------------------------------------------------------
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>자바스크립트 필수패턴 1 - 변수</title>
+  <title>문자열,숫자</title>
 </head>
 
 <body>
   <script>
-    //변수 : 자주쓰는 값을 저장하는 그릇
-    //let (덮어쓰기 가능), const (덮어쓰기 불가능)
-    let box = 'hello';
-    console.log(box);
-
-    //let으로 선언된 변수는 값을 덮어쓰기 가능
-    box = 'world';
-    console.log(box);
-
-    const important = 3;
-    console.log(important);
-
-    //이미 할당된 값이 있다고 오류가 뜨게 됨
-    important = 5;
-    console.log(important);
+    let txt = '2'; //문자
+    let num = 2; //숫자
+    let result = txt + num; //문자와 숫자는 더해질수 없으니 num의 숫자값이 문자로 변환됨
+    console.log(result); //변수에 따옴표를 묶으면 문자로 변경되며 변수의 값을 읽을 수 없게됨 ex)'result'
   </script>
 </body>
 
