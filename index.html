@@ -4,27 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>자바스크립트 필수패턴 1 - 변수</title>
 </head>
 
 <body>
   <script>
-    //const student1 = ['david', 20, 'seoul', 'cooking'];
-    const student1 = {
-      name: 'boram',
-      age: 30,
-      address: 'seoul',
-      hobby: 'fitness'
-    }
+    //변수 : 자주쓰는 값을 저장하는 그릇
+    //let (덮어쓰기 가능), const (덮어쓰기 불가능)
+    let box = 'hello';
+    console.log(box);
 
-    student1.age = 21; //초기 객체 생성이후 property명을 활용해서 값을 변경가능
-    student1.gender = 'male';
+    //let으로 선언된 변수는 값을 덮어쓰기 가능
+    box = 'world';
+    console.log(box);
 
-    console.log(student1.name);
-    console.log(student1.age);
-    console.log(student1.address);
-    console.log(student1['hobby']); //배열처럼 객체의 값을 뽑아낼 수 있음
-    console.log(student1);
+    const important = 3;
+    console.log(important);
+
+    //이미 할당된 값이 있다고 오류가 뜨게 됨
+    important = 5;
+    console.log(important);
   </script>
 </body>
 
