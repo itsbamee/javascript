@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //const student1 = ['david', 20, 'seoul', 'cooking'];
+    const student1 = {
+      name: 'boram',
+      age: 30,
+      address: 'seoul',
+      hobby: 'fitness'
+    }
+
+    student1.age = 21; //초기 객체 생성이후 property명을 활용해서 값을 변경가능
+    student1.gender = 'male';
+
+    console.log(student1.name);
+    console.log(student1.age);
+    console.log(student1.address);
+    console.log(student1['hobby']); //배열처럼 객체의 값을 뽑아낼 수 있음
+    console.log(student1);
+  </script>
+</body>
+
+</html>
