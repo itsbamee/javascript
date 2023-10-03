@@ -4,45 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>연산자</title>
+  <title>조건문</title>
 </head>
 
 <body>
   <script>
-    //산술연산자
-    console.log(2 + 3);
-    console.log(2 - 3);
-    console.log(2 * 3);
-    console.log(4 / 2);
-    console.log(5 % 2);
-
-    let num = 1;
-    console.log(++num); //num 앞 뒤로 ++ 두개 붙여주면 값이 증가함
-    console.log(num);
-
-    //비교연산자
-    console.log(3 == '3'); // =는 대입연산자, == 같은 연산자(값만 비교하고 자료형은 비교하지 않음)
-    console.log(3 === '3'); //값과 자료형을 모두 비교
-
-    console.log(2 != '2'); // 2랑 3이 같지 않음 ! = 붙여쓰기, 자료형은 무시하면서 비교
-    console.log(2 !== '2');
-
-    console.log(2 > 3);
-    console.log(2 < 3);
-    console.log(2 <= 2);
-    console.log(true && true); //복수개의 값이 모두 true가 되어야지 true 반환
-    console.log(true || false); // 둘 중의 하나라도 true가 있으면 true 반환
-
-    //복합 대입 연산자
-    let num1 = 5;
-    //num1 = num1 + 2; // =는 대입연산자 오른쪽이 연산되어 왼쪽에 대입됨
-    num1 += 2;
-    console.log(num1);
-
-    let txt1 = 'hello';
-    txt1 += 'world';
-    console.log(txt1);
-
+    /*
+    조건문
+    -비교연산자를 활용한 조건식을 이용해서 특정 조건일 때 서로 다른 코드가 실행되도록 분기처리
+    if(조건식1){
+      조건식1이 참이면 이곳의 구문이 실행
+      거짓이면 이곳의 구문 무시
+    }
+    else if(조건식2){
+      조건식2가 참이면 이곳의 구문이 실행
+      거짓이면 이곳의 구문무시
+    }
+    else{
+      위의 모든 조건이 참이 아닐 때 이곳의 구문을 실행하고 종료
+    }
+    */
+    const hour = new Date().getHours(); //시간값을 구하는 공식
+    console.log(hour);
+    /*if (hour >= 0 && hour < 10) {
+      console.log('오전입니다.')
+    }
+    else if (hour >= 10 && hour < 15) {
+      cosole.log('오후입니다.')
+    }
+    else if (hour >= 15 && hour < 20) {
+      console.log('저녁입니다.')
+    }
+    else {
+      console.log('야간입니다.')
+    }*/
+    if (hour >= 0 && hour < 10) console.log('오전입니다.');
+    if (hour >= 10 && hour < 15) console.log('오후입니다.');
+    if (hour >= 15 && hour < 20) console.log('저녁입니다.');
+    else console.log('야간입니다.');
   </script>
 </body>
 
